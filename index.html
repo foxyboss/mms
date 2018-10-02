@@ -1,13 +1,14 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
+	<base href="https://foxyboss.github.io/mms/" target="_blank">
+	<!-- base href="http://localhost/mms/" target="_blank" //-->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>To Do List</title>
+	<title>MMS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -59,6 +60,26 @@
 
 	</head>
 	<body>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		      </div>
+		      <div class="modal-body">
+		        ...
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
 
@@ -66,7 +87,7 @@
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html"><i class="icon-checkbox-unchecked"></i>To Do List</a></h1>
+					<h1 id="fh5co-logo"><a href="index.html"><i class="icon-checkbox-unchecked"></i>MMS</a></h1>
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
@@ -86,13 +107,24 @@
 			   	<li style="background-image: url(images/img_bg_1.jpg);">
 			   		<div class="container-fluid">
 			   			<div class="row">
-				   			<div class="col-md-5 col-md-offset-4 col-md-pull-4 js-fullheight slider-text">
+				   			<div class="col-md-5 js-fullheight slider-text">
 				   				<div class="slider-text-inner">
 				   					<div class="desc">
 				   						<span>Project <i class="icon-unlocked"></i> In Progress</span>
 											<h2>Develop X with Y</h2>
 											<p>Sure, something needs to be developed.</p>
 											<p><a class="btn btn-primary btn-lg" href="#">Close</a></p>
+				   					</div>
+				   				</div>
+				   			</div>
+							<div class="col-md-5 js-fullheight slider-text">
+				   				<div class="slider-text-inner">
+				   					<div class="desc">
+				   						<span>Project <i class="icon-unlocked"></i> In Progress</span>
+										<input id="myinput" />
+										<h2>Develop X with Y</h2>
+										<p>Sure, something needs to be developed.</p>
+										<p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button></p>
 				   					</div>
 				   				</div>
 				   			</div>
@@ -108,7 +140,7 @@
 				<div class="container">
 					<div class="row row-bottom-padded-md">
 						<div class="col-md-3">
-							<h3 class="section-title">About To Do List</h3>
+							<h3 class="section-title">About MMS</h3>
 							<p>This will kick everbodies #!&</p>
 						</div>
 					</div>
@@ -125,8 +157,6 @@
 	<!-- END fh5co-wrapper -->
 
 	<!-- jQuery -->
-
-
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
@@ -145,10 +175,13 @@
 	<!-- CS Select -->
 	<script src="js/classie.js"></script>
 	<script src="js/selectFx.js"></script>
+	<!-- Awesomplete -->
+	<script src="js/awesomplete.min.js"></script>
 
 
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+	<script src="https://raw.githubusercontent.com/foxyboss/mms/master/js/ld.js"></script>
 
 	</body>
 </html>
